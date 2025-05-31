@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Patient Registration</h1>
+
+        <form  id="patient-form">
+            <input type="text" id="name" placeholder="Name Surname" required>
+            <input type="date" id="date" required>
+            <input type="text" id="diagnosis" placeholder="Diagnosis" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search Patient">
+            <select  id="filter">
+                <option value="all">All</option>
+                <option value="today">Today</option>
+                <option value="week">This week</option>
+            </select>
+        </div>
+
+        <h2>Registered Patients</h2>
+        <ul id="patient-list"></ul>
+
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
+
+
