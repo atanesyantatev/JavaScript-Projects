@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Coffee Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="top_header">
+            <div class="container header_container">
+                <div class="language-switcher">
+                    <button class="language-option" data-lang="ru">RU</button>
+                    <button class="language-option" data-lang="en">EN</button>
+                </div>
+                <div class="contact-number">
+                    <a href="#" class="contact_us">+371000000</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container bottom_header">
+            <nav class="nav nav_hidden">
+                <ul class="nav_menu">
+                    <li class="nav_li"><a href="index.html" class="nav_link1" data-i18n="home">Home</a></li>
+                    <li class="nav_li"><a href="#" class="nav_link1" data-i18n="about">About</a></li>
+                    <li class="nav_li"><a href="#" class="nav_link1" data-i18n="menu">Menu</a></li>
+                    <li class="nav_li"><a href="reservation.html" class="nav_link1 act"
+                            data-i18n="reservation">Reservation</a></li>
+
+                </ul>
+            </nav>
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" class="logo-img">
+            </a>
+
+            <div class="nav_items">
+
+                <a href="#" class="nav_item">
+                    <img src="images/user.svg" alt="" class="nav_item_img">
+                </a>
+
+                <a href="heart.html" class="nav_item">
+                    <img src="images/favorite.svg" alt="" class="nav_item_img">
+                </a>
+
+                <a href="cart.html" class="nav_item cart">
+                    <img src="images/cart.svg" alt="" class="nav_item_img">
+                    <p class="cart-count"></p>
+                </a>
+            </div>
+
+
+            <button class="menu_button">
+                <span class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+
+                </span>
+
+
+                <span class="close-icon hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </button>
+
+        </div>
+
+
+
+
+        <div class="mobile_menu">
+            <ul class="mobile_nav_menu">
+                <li class="nav_li"><a href="index.html" class="nav_link active">Home</a></li>
+                <li class="nav_li"><a href="#" class="nav_link">About</a></li>
+                <li class="nav_li"><a href="#" class="nav_link">Menu</a></li>
+                <li class="nav_li"><a href="reservation.html" class="nav_link">Reservation</a></li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main>
+        <sectio class="section">
+            <div class="container reserve_container"></div>
+
+        </sectio>
+
+        <section class="section">
+            <div class="container description_container">
+                <p class="description" data-i18n="description">Description</p>
+                <div class="description-text-container">
+                    <div class="description-text-menu">
+                        <li data-i18n="majority">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+                            sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                            generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                            first true generator on the Internet. </li>
+                        <li data-i18n="available">
+
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable.
+                        </li>
+                        <li data-i18n="passage">If you are going to use a passage of Lorem Ipsum, you need to be sure
+                            there isn't anything
+                            embarrassing hidden in the middle of text. </li>
+                        <li data-i18n="all">
+                            All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as
+                            necessary, making this the first true generator on the Internet.
+                        </li>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container catalog_container">
+                <h1 class="desc_title" data-i18n="other products">Other Products</h1>
+
+                <div class="products products2">
+                    <div class="card" data-id="1" data-title="Lavazza coffee" data-img="images/lavaza.png"
+                        data-price="19.99" class="card_active">
+                        <img src="images/lavaza.png" class="card_img">
+                        <div class="card_title" data-i18n="Lavazza coffee">Lavazza coffee</div>
+                        <div class="card_price">$19.99</div>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 64 64"
+                            enable-background="new 0 0 64 64" xml:space="preserve" class="icon_heart" data-id="1">
+                            <path stroke-width="2" stroke-miterlimit="10" d="M1,21c0,20,31,38,31,38s31-18,31-38
+	c0-8.285-6-16-15-16c-8.285,0-16,5.715-16,14c0-8.285-7.715-14-16-14C7,5,1,12.715,1,21z" />
+                        </svg>
+
+                    </div>
+
+                    <div class="card" data-id="2" data-title="Settecento coffee" data-img="images/settecento.png"
+                        data-price="20.65">
+                        <img src="images/settecento.png" class="card_img">
+                        <div class="card_title" data-i18n="Settecento coffee">Settecento coffee</div>
+                        <div class="card_price">$20.69</div>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 64 64"
+                            enable-background="new 0 0 64 64" xml:space="preserve" class="icon_heart" data-id="2">
+                            <path stroke-width="2" stroke-miterlimit="10" d="M1,21c0,20,31,38,31,38s31-18,31-38
+	c0-8.285-6-16-15-16c-8.285,0-16,5.715-16,14c0-8.285-7.715-14-16-14C7,5,1,12.715,1,21z" />
+                        </svg>
+
+                    </div>
+
+                    <div class="card" data-id="3" data-title="Lavazza Super Crema" data-img="images/lavaza.png"
+                        data-price="18.43">
+                        <img src="images/lavaza.png" class="card_img">
+                        <div class="card_title" data-i18n="Lavazza Super Crema">Lavazza Super Crema</div>
+                        <div class="card_price">$18.43</div>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 64 64"
+                            enable-background="new 0 0 64 64" xml:space="preserve" class="icon_heart" data-id="3">
+                            <path stroke-width="2" stroke-miterlimit="10" d="M1,21c0,20,31,38,31,38s31-18,31-38
+	c0-8.285-6-16-15-16c-8.285,0-16,5.715-16,14c0-8.285-7.715-14-16-14C7,5,1,12.715,1,21z" />
+                        </svg>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer_container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="images/logo.png" class="logo-img">
+                    <div class="footer-logo-title">CoffeMeet</div>
+                </div>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-menu">
+                    <li class="nav_li" data-i18n="home">Home</li>
+                    <li class="nav_li" data-i18n="about">About</li>
+                    <li class="nav_li" data-i18n="menu">Menu</li>
+                    <li class="nav_li" data-i18n="reservation">Reservation</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-menu">
+                    <li class="nav_li" data-i18n="contacts">Contacts</li>
+                    <li class="nav_li" data-i18n="privacy">Privacy policy</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
